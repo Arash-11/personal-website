@@ -1,0 +1,329 @@
+.projects__title, .about__title, .contact__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 8rem;
+}
+
+.projects__title::before, .about__title::before, .contact__title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 5rem;
+  width: 5rem;
+  height: 0.1rem;
+  background: white;
+}
+
+.nav__list, .projects__container, .projects__container__project__links, .about__text, .about__skills__list-container, .contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__container__project, .contact__container__links__1, .contact__container__links__2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #232320;
+  padding: 0 5rem;
+  font-size: 16px;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+body li {
+  list-style: none;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.5rem 5rem;
+  width: 100%;
+  background: #232320;
+  z-index: 2;
+}
+
+.nav__list {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+.nav__list__first-item {
+  margin-right: 50%;
+}
+
+.landing-page {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.landing-page__heading {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Domine", serif;
+  font-size: 6rem;
+  z-index: 1;
+}
+
+.landing-page__background-text {
+  width: 100%;
+  padding: 0 3rem;
+  color: rgba(255, 255, 255, 0.05);
+  font-family: "Domine", serif;
+  font-size: 9rem;
+  font-weight: 600;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.landing-page__background-text__second-word {
+  float: right;
+  margin: 20% 0 -2%;
+}
+
+.projects {
+  margin-top: 8rem;
+}
+
+.projects__title::before {
+  top: calc(100% + 8.9rem);
+}
+
+.projects__container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 5%;
+}
+
+.projects__container__project {
+  padding: 1.5em 1em 1em;
+  width: 41vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 7%;
+  border-radius: 10px;
+  background: #191919;
+}
+
+.projects__container__project__img {
+  width: 100%;
+  height: auto;
+}
+
+.projects__container__project__title {
+  font-family: "Domine", serif;
+  font-weight: 500;
+  font-size: 2em;
+  margin: 6% auto 5%;
+}
+
+.projects__container__project__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.5em;
+  width: 90%;
+}
+
+.projects__container__project__links {
+  margin: 6% auto 4%;
+  width: 50%;
+}
+
+.projects__container__project__links a {
+  padding: 2% 1%;
+  width: 40%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #232320;
+  background: #eee;
+}
+
+.projects__see-more {
+  text-align: center;
+}
+
+.projects__see-more__link {
+  padding: 1.5%;
+  width: 40%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  border-radius: 5px;
+  background: #191919;
+}
+
+.projects__see-more__link:hover .projects__see-more__link__arrow {
+  display: inline-block !important;
+}
+
+.projects__see-more__link__arrow {
+  display: none !important;
+}
+
+.about {
+  margin-top: 8rem;
+}
+
+.about__title::before {
+  top: calc(320% + 12.1rem);
+}
+
+.about__text {
+  margin-top: 5%;
+  padding: 0 5%;
+}
+
+.about__text__paragraph {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.about__text_img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about__skills {
+  margin-top: 6rem;
+}
+
+.about__skills__title {
+  text-align: center;
+  margin-bottom: 3%;
+  font-family: "Domine", serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.about__skills__list-container {
+  padding: 0 20%;
+}
+
+.about__skills__list-container__list {
+  width: 20vw;
+  height: 15.5em;
+  padding: 1.5% 0;
+  margin-bottom: 7%;
+  border-radius: 10px;
+  background: #191919;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.8em;
+}
+
+.contact {
+  margin-top: 8rem;
+}
+
+.contact__title::before {
+  top: calc(500% + 10.2rem);
+}
+
+.contact__container {
+  margin: 5% auto 3%;
+  padding: 0 20% 0 5%;
+  font-family: "Roboto", sans-serif;
+  line-height: 3em;
+  font-size: 1.5rem;
+}
+
+.contact__container__links__1 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__container__links__2 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__container__links__1__email:hover {
+  color: #d54b3d;
+}
+
+.contact__container__links__1__linkedin:hover {
+  color: #0077b5;
+}
+
+.contact__container__links__1__twitter:hover {
+  color: #1c9cea;
+}
+
+.contact__container__links__2__github:hover {
+  color: #bbb;
+}
+
+.contact__container__links__2__codepen:hover {
+  color: #bbb;
+}
+
+.contact__container__links__icon {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */

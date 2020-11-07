@@ -1,0 +1,348 @@
+$background-title-black: rgba(255, 255, 255, 0.05);
+$background-black: #232320;
+$black-shade: #191919;
+$darkgray: #979797;
+$lightgray: #eee;
+$gmail-red: #d54b3d;
+$linkedin-blue: #0077b5;
+$twitter-blue: #1c9cea;
+$font-family-1: 'Domine', serif;
+$font-family-2: 'Roboto', sans-serif;
+
+$section-margin-top: 8rem;
+%section-title-style {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 8rem;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 5rem;
+        width: 5rem;
+        height: 0.1rem;
+        background: white;
+    }
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $background-black;
+    padding: 0 5rem;
+    font-size: 16px;
+    color: white;
+    scroll-behavior: smooth;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    li {
+        list-style: none;
+    }
+    // &::-webkit-scrollbar {
+    //     width: 0.7rem;
+    // }
+    // &::-webkit-scrollbar-thumb {
+    //     background: black;
+    // }
+    // &::-webkit-scrollbar-track {
+    //     background: white;
+    // }
+    // transition: all 0.2s ease-in;
+}
+
+
+// navigation bar ---------------------------------------------------------------------------
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 5rem;
+    width: 100%;
+    background: $background-black;
+    z-index: 2;
+}
+
+.nav__list {
+    @extend %flex-row;
+    font-family: $font-family-2;
+    font-size: 1.3rem;
+}
+
+.nav__list__first-item {
+    margin-right: 50%;
+}
+
+
+// landing page -----------------------------------------------------------------------------
+.landing-page {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.landing-page__heading {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+    font-family: $font-family-1;
+    font-size: 6rem;
+    z-index: 1;
+}
+
+.landing-page__background-text {
+    width: 100%;
+    padding: 0 3rem;
+    color: $background-title-black;
+    font-family: $font-family-1;
+    font-size: 9rem;
+    font-weight: 600;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.landing-page__background-text__second-word {
+    float: right;
+    margin: 20% 0 -2%;
+}
+
+
+// projects section --------------------------------------------------------------------------
+.projects {
+    margin-top: $section-margin-top;
+}
+
+.projects__title {
+    @extend %section-title-style;
+    &::before {
+        top: calc(100% + 8.9rem);
+    }
+}
+
+.projects__container {
+    @extend %flex-row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5%;
+}
+
+.projects__container__project {
+    @extend %flex-column;
+    padding: 1.5em 1em 1em;
+    width: 41vw;
+    height: fit-content;
+    margin-bottom: 7%;
+    border-radius: 10px;
+    background: $black-shade;
+}
+
+.projects__container__project__img {
+    width: 100%;
+    height: auto;
+}
+
+.projects__container__project__title {
+    font-family: $font-family-1;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 6% auto 5%;
+}
+
+.projects__container__project__text {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5em;
+    width: 90%;
+}
+
+.projects__container__project__links {
+    @extend %flex-row;
+    margin: 6% auto 4%;
+    width: 50%;
+    a {
+        padding: 2% 1%;
+        width: 40%;
+        text-align: center;
+        font-family: $font-family-2;
+        font-weight: 400;
+        font-size: 1.3em;
+        color: $background-black;
+        background: $lightgray;
+    }
+}
+
+.projects__see-more {
+    text-align: center;
+}
+
+.projects__see-more__link {
+    padding: 1.5%;
+    width: 40%;
+    text-align: center;
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 1.3em;
+    border-radius: 5px;
+    background: $black-shade;
+    &:hover .projects__see-more__link__arrow {
+        display: inline-block !important;
+    }
+}
+
+.projects__see-more__link__arrow {
+    display: none !important;
+}
+
+
+// about section --------------------------------------------------------------------------
+.about {
+    margin-top: $section-margin-top;
+}
+
+.about__title {
+    @extend %section-title-style;
+    &::before {
+        top: calc(320% + 12.1rem);
+    }
+}
+
+.about__text {
+    @extend %flex-row;
+    margin-top: 5%;
+    padding: 0 5%;
+}
+
+.about__text__paragraph {
+    width: 80%;
+    font-family: $font-family-2;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.about__text_img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about__skills {
+    margin-top: 6rem;
+}
+
+.about__skills__title {
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: $font-family-1;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.about__skills__list-container {
+    @extend %flex-row;
+    padding: 0 20%;
+}
+
+.about__skills__list-container__list {
+    width: 20vw;
+    height: 15.5em;
+    padding: 1.5% 0;
+    margin-bottom: 7%;
+    border-radius: 10px;
+    background: $black-shade;
+    text-align: center;
+    font-family: $font-family-2;
+    font-size: 1.3em;
+    line-height: 1.8em;
+}
+
+
+// contact section --------------------------------------------------------------------------
+.contact {
+    margin-top: $section-margin-top;
+}
+
+.contact__title {
+    @extend %section-title-style;
+    &::before {
+        top: calc(500% + 10.2rem);
+    }
+}
+
+.contact__container {
+    @extend %flex-row;
+    margin: 5% auto 3%;
+    padding: 0 20% 0 5%;
+    font-family: $font-family-2;
+    line-height: 3em;
+    font-size: 1.5rem;
+}
+
+.contact__container__links__1 {
+    @extend %flex-column;
+    align-items: flex-start;
+}
+
+.contact__container__links__2 {
+    @extend %flex-column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact__container__links__1__email {
+    &:hover {
+        color: $gmail-red;
+    }
+}
+
+.contact__container__links__1__linkedin {
+    &:hover {
+        color: $linkedin-blue;
+    }
+}
+
+.contact__container__links__1__twitter {
+    &:hover {
+        color: $twitter-blue;
+    }
+}
+
+.contact__container__links__2__github {
+    &:hover {
+        color: #bbb;
+    }
+}
+
+.contact__container__links__2__codepen {
+    &:hover {
+        color: #bbb;
+    }
+}
+
+.contact__container__links__icon {
+    transform: scale(1.1);
+}
