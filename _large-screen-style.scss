@@ -1,0 +1,152 @@
+@media screen and (min-width: 3000px) {
+
+    $section-margin-large: 23rem auto 10rem;
+
+    %section-title-style-large {
+        font-family: $font-family-2;
+        font-weight: 400;
+        font-size: 3rem;
+        &::before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            left: 0;
+            bottom: 0.4rem;
+            margin-right: 5%;
+            width: 10rem;
+            height: 0.2rem;
+            background: white;
+        }
+    }
+
+    body {
+        padding: 0 15rem;
+    }
+
+
+    // navigation bar ---------------------------------------------------------------------------
+    .nav {
+        padding: 3rem 15rem;
+    }
+
+    .nav__list {
+        font-size: 3rem;
+    }
+
+
+    // landing page -----------------------------------------------------------------------------
+    .landing-page__heading {
+        font-size: 10rem;
+    }
+
+    
+    // projects section --------------------------------------------------------------------------
+    .projects__title {
+        @extend %section-title-style-large;
+    }
+
+    .projects__container {
+        margin-top: 7%;
+    }
+
+    .projects__container__project {
+        padding: 2.5em;
+        width: 37vw;
+        margin-bottom: 9%;
+        border-radius: 20px;
+    }
+
+    .projects__container__project__title {
+        font-size: 4em;
+    }
+
+    .projects__container__project__text {
+        font-size: 2em;
+        line-height: 1.8em;
+        width: 85%;
+    }
+
+    .projects__container__project__links {
+        a {
+            padding: 3% 1%;
+            font-size: 2em;
+            border-radius: 6px;
+        }
+    }
+
+    .projects__see-more__link {
+        padding: 2% 3%;
+        font-size: 3em;
+        border-radius: 10px;
+    }
+
+
+    // about section --------------------------------------------------------------------------
+    .about {
+        margin: $section-margin-large;
+    }
+
+    .about__title {
+        @extend %section-title-style-large;
+    }
+
+    .about__text {
+        margin-top: 5%;
+        padding: 0 7%;
+    }
+
+    .about__text__paragraph {
+        font-size: 2.7em;
+        line-height: 1.5em;
+    }
+
+    .about__text_img {
+        width: 70%;
+        border-radius: 20px;
+    }
+
+    .about__skills {
+        margin-top: 14rem;
+    }
+
+    .about__skills__title {
+        margin-bottom: 6%;
+        font-size: 2.7em;
+    }
+
+    .about__skills__list-container {
+        padding: 0 20%;
+    }
+
+    .about__skills__list-container__list {
+        height: 21.7em;
+        padding: 2% 0;
+        margin-bottom: 7%;
+        border-radius: 10px;
+        font-size: 2.5em;
+        line-height: 2.5em;
+    }
+
+
+    // contact section --------------------------------------------------------------------------
+    .contact {
+        margin: $section-margin-large;
+    }
+
+    .contact__title {
+        @extend %section-title-style-large;
+    }
+
+    .contact__container {
+        margin-top: 6rem;
+        padding: 0 30% 0 7%;
+        line-height: 5em;
+        font-size: 2.5rem;
+    }
+
+    .contact__container__links__icon {
+        margin-right: 2rem;
+        transform: scale(1.4);
+    }
+
+}

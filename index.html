@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
+
+    <div id="particles-js" class="particles-js"></div>
 
     <nav class="nav">
         <ul class="nav__list">
@@ -27,21 +28,17 @@
         <h1 class="landing-page__heading">Hi, I'm Arash.<br/>
             I build websites.
         </h1>
-        <div class="landing-page__background-text">
-            <span>web</span> <br/>
-            <span class="landing-page__background-text__second-word">developer</span>
-        </div>
     </section>
     
     <section id="projects" class="projects">
-        <h3 class="projects__title">Projects</h3>
+        <h3 class="projects__title">My projects</h3>
         <div class="projects__container">
 
             <div class="projects__container__project">
                 <img src="./images/organizr.png" class="projects__container__project__img" alt="">
                 <h4 class="projects__container__project__title">Organizr</h4>
                 <p class="projects__container__project__text">
-                    A web application to organize your bookmarks, blogs, articles, and videos.
+                    A web application to organize bookmarks, blogs, articles, and videos you saved.
                     Built with React.js, React Router, SCSS, and Firebase.
                 </p>
                 <div class="projects__container__project__links">
@@ -55,7 +52,7 @@
                 <h4 class="projects__container__project__title">BookList</h4>
                 <p class="projects__container__project__text">
                     A Google Keep-inspired website to save the books you'd like to read in one place. 
-                    Built with React.js, React Router, Material UI, SCSS, and Firebase.
+                    Built with React.js, React Router, Material UI, and Firebase.
                 </p>
                 <div class="projects__container__project__links">
                     <a target="_blank" rel="noopener noreferrer" href="https://abooklist.netlify.app/">website</a>
@@ -89,13 +86,13 @@
         </div>
         <div class="projects__see-more">
             <a class="projects__see-more__link" href="https://github.com/Arash-11?tab=repositories" target="_blank" rel="noopener noreferrer">
-                See more <i class="fas fa-arrow-right projects__see-more__link__arrow"></i>
+                See more
             </a>
         </div>
     </section>
 
     <section id="about" class="about">
-        <h3 class="about__title">About</h3>
+        <h3 class="about__title">About me</h3>
         <article class="about__text">
             <div>
                 <p class="about__text__paragraph">
@@ -109,10 +106,10 @@
                     soccer, or working on my Japanese and Spanish language skills.
                     <br>
                     <br>
-                    When I’m not building websites, I’m reading, playing 
-                    soccer, or working on my Japanese and Spanish language skills.
-                    When I’m not building websites, I’m reading, playing 
-                    soccer, or working on my Japanese and Spanish language skills.
+                    Apart from the technologies listed below, I have also dabbled with 
+                    Node.js, Express, and Particles.js.
+                    Apart from the technologies listed below, I have also dabbled with 
+                    Node.js, Express, and Particles.js.
                 </p>
             </div>
             <img src="./images/profile-img.jpg" class="about__text_img" alt="Profile picture">
@@ -159,7 +156,7 @@
                     <span>Arash Nawyan</span>
                 </a>
                 <a class="contact__container__links__1__twitter" href="https://twitter.com/arash11gt" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-twitter contact__container__links_icon"></i>
+                    <i class="fab fa-twitter contact__container__links__icon"></i>
                     <span>@arash11gt</span>
                 </a>
             </div>
@@ -176,8 +173,12 @@
         </div>
     </section>
 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="./app.js"></script>
 
 </body>
-
 
 </html>
