@@ -68,6 +68,8 @@ body {
 body a {
   text-decoration: none;
   color: white;
+  -webkit-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in;
 }
 
 body li {
@@ -106,6 +108,10 @@ body::-webkit-scrollbar-track {
 .nav__list {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
+}
+
+.nav__list a:hover {
+  color: #cf4141;
 }
 
 .nav__list__first-item {
@@ -220,8 +226,8 @@ body::-webkit-scrollbar-track {
   color: white;
   background: #232320;
   border-radius: 3px;
-  -webkit-transition: background-color 0.15s ease-in;
-  transition: background-color 0.15s ease-in;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
 }
 
 .projects__container__project__links a:hover {
@@ -240,8 +246,8 @@ body::-webkit-scrollbar-track {
   font-size: 1.3rem;
   border-radius: 5px;
   background: #191919;
-  -webkit-transition: background-color 0.15s ease-in;
-  transition: background-color 0.15s ease-in;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
 }
 
 .projects__see-more__link:hover {
