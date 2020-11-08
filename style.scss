@@ -10,7 +10,7 @@ $font-family-1: 'Domine', serif;
 $font-family-2: 'Roboto', sans-serif;
 
 $padding: 0 5rem;
-$transition: background 0.15s ease-in;
+$transition: background-color 0.15s ease-in;
 $section-margin: 8rem auto 4rem;
 
 %section-title-style {
@@ -74,7 +74,6 @@ body {
     &::-webkit-scrollbar-track {
         background: $black-shade;
     }
-    // transition: all 0.2s ease-in;
 }
 
 .particles-js {
@@ -103,6 +102,7 @@ body {
 
 .nav__list__first-item {
     margin-right: 50%;
+    font-size: 1.5rem;
 }
 
 
@@ -114,15 +114,27 @@ body {
 }
 
 .landing-page__heading {
+    opacity: 0;
     display: inline-block;
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     width: fit-content;
     transform: translate(-50%, -50%);
     font-family: $font-family-1;
     font-size: 6rem;
     z-index: 1;
+    animation: 0.5s ease-in-out 0.3s forwards fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        top: 50%;
+    }
 }
 
 
@@ -162,16 +174,16 @@ body {
 .projects__container__project__title {
     font-family: $font-family-1;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 2rem;
     margin: 6% auto 5%;
 }
 
 .projects__container__project__text {
     font-family: $font-family-2;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.7rem;
     width: 90%;
 }
 
@@ -234,11 +246,11 @@ body {
 .about__text__paragraph {
     width: 80%;
     font-family: $font-family-2;
-    font-size: 1.3em;
-    line-height: 1.5em;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
 }
 
-.about__text_img {
+.about__text__img {
     width: 30%;
     height: auto;
     border-radius: 10px;
@@ -253,7 +265,7 @@ body {
     margin-bottom: 4%;
     font-family: $font-family-1;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .about__skills__list-container {
@@ -263,14 +275,14 @@ body {
 
 .about__skills__list-container__list {
     width: 20vw;
-    height: 18.5em;
+    height: 18.7em;
     padding: 1.5% 0;
     border-radius: 10px;
     background: $black-shade;
     text-align: center;
     font-family: $font-family-2;
-    font-size: 1.3em;
-    line-height: 2.2em;
+    font-size: 1.3rem;
+    line-height: 2.9rem;
 }
 
 
@@ -289,7 +301,7 @@ body {
     margin-top: 3rem;
     padding: 0 20% 0 5%;
     font-family: $font-family-2;
-    line-height: 3em;
+    line-height: 4.5rem;
     font-size: 1.5rem;
 }
 
@@ -300,7 +312,6 @@ body {
 
 .contact__container__links__2 {
     @extend %flex-column;
-    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -343,5 +354,5 @@ body {
 // media queries --------------------------------------------------------------------------
 
 @import 'large-screen-style';
-
-@import 'mobile-style';
+@import 'mobile-style-1';
+@import 'mobile-style-2';

@@ -1,0 +1,187 @@
+@media screen and (min-width: 351px) and (max-width: 880px) {
+
+    $padding-mobile-1: 0 1.3rem;
+    $section-margin-mobile-1: 8rem auto 4rem;
+
+    %section-title-style-mobile-1 {
+        font-family: $font-family-2;
+        font-weight: 400;
+        font-size: 1.3rem;
+        &::before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            left: 0;
+            bottom: 0.4rem;
+            margin-right: 5%;
+            width: 3rem;
+            height: 0.1rem;
+            background: white;
+        }
+    }
+
+    %flex-row-mobile-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    %flex-column-mobile-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    // navigation bar ---------------------------------------------------------------------------
+    .nav {
+        padding: 1rem 1.3rem;
+    }
+
+    .nav__list {
+        font-size: 1rem;
+    }
+
+    .nav__list__first-item {
+        margin-right: 10%;
+    }
+
+
+    // landing page -----------------------------------------------------------------------------
+    .landing-page__heading {
+        font-size: 2.6rem;
+    }
+
+
+    // projects section --------------------------------------------------------------------------
+    .projects {
+        margin-top: 0;
+        padding: $padding-mobile-1;
+    }
+
+    .projects__title {
+        @extend %section-title-style-mobile-1;
+    }
+
+    .projects__container {
+        @extend %flex-column-mobile-1;
+        margin-top: 10%;
+    }
+
+    .projects__container__project {
+        @extend %flex-column-mobile-1;
+        padding: 0.9em 0.7em 1em;
+        width: 90vw;
+        margin-bottom: 10%;
+        &:last-child {
+            margin-bottom: 20%;
+        }
+    }
+
+    .projects__container__project__title {
+        text-align: center;
+        margin: 6% auto 5%;
+    }
+
+    .projects__container__project__text {
+        font-size: 1rem;
+    }
+
+    .projects__container__project__links {
+        @extend %flex-row-mobile-1;
+        margin: 8% auto 2%;
+        width: 80%;
+    }
+
+    .projects__see-more__link {
+        padding: 3% 8%;
+        font-size: 1.3em;
+    }
+
+
+    // about section --------------------------------------------------------------------------
+    .about {
+        margin: $section-margin-mobile-1;
+        padding: $padding-mobile-1;
+    }
+
+    .about__title {
+        @extend %section-title-style-mobile-1;
+    }
+
+    .about__text {
+        @extend %flex-column-mobile-1;
+        flex-direction: column-reverse;
+        margin-top: 5%;
+        padding: 0 3%;
+    }
+
+    .about__text__paragraph {
+        width: 100%;
+        // margin-left: 2%;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+
+    .about__text__img {
+        width: 80%;
+        height: auto;
+        margin: 7% auto 12%;
+    }
+
+    .about__skills {
+        margin-top: 5rem;
+    }
+
+    .about__skills__title {
+        margin-bottom: 8%;
+        font-size: 1.5rem;
+    }
+
+    .about__skills__list-container {
+        @extend %flex-column-mobile-1;
+        padding: 0 7%;
+    }
+
+    .about__skills__list-container__list {
+        width: 70vw;
+        &:first-child {
+            margin-bottom: 8%;
+        }
+    }
+
+
+    // contact section --------------------------------------------------------------------------
+    .contact {
+        margin: $section-margin-mobile-1;
+        padding: $padding-mobile-1;
+    }
+
+    .contact__title {
+        @extend %section-title-style-mobile-1;
+    }
+
+    .contact__container {
+        @extend %flex-column-mobile-1;
+        margin-top: 3rem;
+        padding: 0 0 0 8%;
+        line-height: 4rem;
+        font-size: 1.3rem;
+    }
+
+    .contact__container__links__1 {
+        width: 100%;
+    }
+
+    .contact__container__links__2 {
+        width: 100%;
+    }
+
+    .contact__container__links__icon {
+        margin-right: 1rem;
+        transform: scale(1.1);
+    }
+
+}

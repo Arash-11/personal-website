@@ -33,6 +33,10 @@
         font-size: 3rem;
     }
 
+    .nav__list__first-item {
+        font-size: 3rem;
+    }
+
 
     // landing page -----------------------------------------------------------------------------
     .landing-page__heading {
@@ -57,12 +61,12 @@
     }
 
     .projects__container__project__title {
-        font-size: 4em;
+        font-size: 4rem;
     }
 
     .projects__container__project__text {
-        font-size: 2em;
-        line-height: 1.8em;
+        font-size: 2rem;
+        line-height: 3rem;
         width: 85%;
     }
 
@@ -96,11 +100,11 @@
     }
 
     .about__text__paragraph {
-        font-size: 2.7em;
-        line-height: 1.5em;
+        font-size: 3rem;
+        line-height: 4.2rem;
     }
 
-    .about__text_img {
+    .about__text__img {
         width: 70%;
         border-radius: 20px;
     }
@@ -111,7 +115,7 @@
 
     .about__skills__title {
         margin-bottom: 6%;
-        font-size: 2.7em;
+        font-size: 2.7rem;
     }
 
     .about__skills__list-container {
@@ -119,12 +123,12 @@
     }
 
     .about__skills__list-container__list {
-        height: 21.7em;
+        height: 21.8em;
         padding: 2% 0;
         margin-bottom: 7%;
         border-radius: 10px;
-        font-size: 2.5em;
-        line-height: 2.5em;
+        font-size: 2.7rem;
+        line-height: 7rem;
     }
 
 
@@ -140,7 +144,7 @@
     .contact__container {
         margin-top: 6rem;
         padding: 0 30% 0 7%;
-        line-height: 5em;
+        line-height: 10rem;
         font-size: 2.5rem;
     }
 
