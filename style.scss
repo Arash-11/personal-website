@@ -197,7 +197,7 @@ body {
         text-align: center;
         font-family: $font-family-2;
         font-weight: 400;
-        font-size: 1.3em;
+        font-size: 1.3rem;
         color: white;
         background: $background-black;
         border-radius: 3px;
@@ -217,7 +217,7 @@ body {
     text-align: center;
     font-family: $font-family-2;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     border-radius: 5px;
     background: $black-shade;
     transition: $transition;
@@ -356,3 +356,4 @@ body {
 @import 'large-screen-style';
 @import 'mobile-style-1';
 @import 'mobile-style-2';
+@import 'mobile-style-3';
