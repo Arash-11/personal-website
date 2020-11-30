@@ -292,7 +292,7 @@ body::-webkit-scrollbar-track {
 
 .about__skills__title {
   text-align: center;
-  margin-bottom: 4%;
+  margin-bottom: 5%;
   font-family: "Domine", serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -549,17 +549,21 @@ body::-webkit-scrollbar-track {
   .projects__container__project {
     padding: 0.9em 0.7em 1em;
     width: 90vw;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   .projects__container__project:last-child {
     margin-bottom: 20%;
   }
   .projects__container__project__title {
     text-align: center;
-    margin: 6% auto 5%;
+    margin: 7% auto 6%;
     font-size: 1.7rem;
   }
   .projects__container__project__text {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 0.5rem;
     font-size: 0.9rem;
     line-height: 1.5rem;
   }
@@ -590,6 +594,7 @@ body::-webkit-scrollbar-track {
     width: 100%;
     font-size: 1rem;
     line-height: 1.6rem;
+    text-align: center;
   }
   .about__text__img {
     width: 80%;
@@ -597,10 +602,10 @@ body::-webkit-scrollbar-track {
     margin: 7% auto 12%;
   }
   .about__skills {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
   .about__skills__title {
-    margin-bottom: 10%;
+    margin-bottom: 12%;
     font-size: 1.2rem;
   }
   .about__skills__list-container {
@@ -707,16 +712,20 @@ body::-webkit-scrollbar-track {
   .projects__container__project {
     padding: 0.9em 0.7em 1em;
     width: 90vw;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   .projects__container__project:last-child {
     margin-bottom: 20%;
   }
   .projects__container__project__title {
     text-align: center;
-    margin: 6% auto 5%;
+    margin: 7% auto 6%;
   }
   .projects__container__project__text {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 0.5rem;
     font-size: 1.1rem;
   }
   .projects__container__project__links {
@@ -746,6 +755,7 @@ body::-webkit-scrollbar-track {
     width: 100%;
     font-size: 1.3rem;
     line-height: 1.9rem;
+    text-align: center;
   }
   .about__text__img {
     width: 80%;
@@ -753,10 +763,10 @@ body::-webkit-scrollbar-track {
     margin: 7% auto 12%;
   }
   .about__skills {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
   .about__skills__title {
-    margin-bottom: 8%;
+    margin-bottom: 10%;
     font-size: 1.5rem;
   }
   .about__skills__list-container {
@@ -791,7 +801,7 @@ body::-webkit-scrollbar-track {
   }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1020px) {
+@media screen and (min-width: 701px) and (max-width: 1110px) {
   .projects__title, .about__title, .contact__title {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -860,18 +870,22 @@ body::-webkit-scrollbar-track {
   .projects__container__project {
     padding: 1em 0.8em 1.2em;
     width: 80vw;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   .projects__container__project:last-child {
     margin-bottom: 20%;
   }
   .projects__container__project__title {
     text-align: center;
-    margin: 6% auto 5%;
+    margin: 7% auto 6%;
     font-size: 2rem;
   }
   .projects__container__project__text {
     width: 95%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
     line-height: 1.7rem;
   }
@@ -902,6 +916,7 @@ body::-webkit-scrollbar-track {
     width: 100%;
     font-size: 1.2rem;
     line-height: 1.8rem;
+    text-align: center;
   }
   .about__text__img {
     width: 60%;
@@ -909,10 +924,10 @@ body::-webkit-scrollbar-track {
     margin: 7% auto 12%;
   }
   .about__skills {
-    margin-top: 6rem;
+    margin-top: 7rem;
   }
   .about__skills__title {
-    margin-bottom: 8%;
+    margin-bottom: 10%;
     font-size: 1.5rem;
   }
   .about__skills__list-container {

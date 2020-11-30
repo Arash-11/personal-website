@@ -74,7 +74,7 @@
         @extend %flex-column-mobile-2;
         padding: 0.9em 0.7em 1em;
         width: 90vw;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         &:last-child {
             margin-bottom: 20%;
         }
@@ -82,10 +82,12 @@
 
     .projects__container__project__title {
         text-align: center;
-        margin: 6% auto 5%;
+        margin: 7% auto 6%;
     }
 
     .projects__container__project__text {
+        height: fit-content;
+        margin-bottom: 0.5rem;
         font-size: 1.1rem;
     }
 
@@ -125,6 +127,7 @@
         width: 100%;
         font-size: 1.3rem;
         line-height: 1.9rem;
+        text-align: center;
     }
 
     .about__text__img {
@@ -134,11 +137,11 @@
     }
 
     .about__skills {
-        margin-top: 5rem;
+        margin-top: 6rem;
     }
 
     .about__skills__title {
-        margin-bottom: 8%;
+        margin-bottom: 10%;
         font-size: 1.5rem;
     }
 

@@ -1,4 +1,4 @@
-@media screen and (min-width: 701px) and (max-width: 1020px) {
+@media screen and (min-width: 701px) and (max-width: 1110px) {
 
     $padding-mobile-3: 0 4rem;
     $section-margin-mobile-3: 8rem auto 4rem;
@@ -74,7 +74,7 @@
         @extend %flex-column-mobile-3;
         padding: 1em 0.8em 1.2em;
         width: 80vw;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         &:last-child {
             margin-bottom: 20%;
         }
@@ -82,12 +82,14 @@
 
     .projects__container__project__title {
         text-align: center;
-        margin: 6% auto 5%;
+        margin: 7% auto 6%;
         font-size: 2rem;
     }
 
     .projects__container__project__text {
         width: 95%;
+        height: fit-content;
+        margin-bottom: 1rem;
         font-size: 1.1rem;
         line-height: 1.7rem;
     }
@@ -128,6 +130,7 @@
         width: 100%;
         font-size: 1.2rem;
         line-height: 1.8rem;
+        text-align: center;
     }
 
     .about__text__img {
@@ -137,11 +140,11 @@
     }
 
     .about__skills {
-        margin-top: 6rem;
+        margin-top: 7rem;
     }
 
     .about__skills__title {
-        margin-bottom: 8%;
+        margin-bottom: 10%;
         font-size: 1.5rem;
     }
 
