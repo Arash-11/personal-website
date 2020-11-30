@@ -1,9 +1,9 @@
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 701px) and (max-width: 1020px) {
 
-    $padding-mobile-2: 0 1rem;
-    $section-margin-mobile-2: 8rem auto 4rem;
+    $padding-mobile-3: 0 4rem;
+    $section-margin-mobile-3: 8rem auto 4rem;
 
-    %section-title-style-mobile-2 {
+    %section-title-style-mobile-3 {
         font-family: $font-family-2;
         font-weight: 400;
         font-size: 1.2rem;
@@ -14,20 +14,20 @@
             left: 0;
             bottom: 0.4rem;
             margin-right: 5%;
-            width: 3rem;
+            width: 5rem;
             height: 0.1rem;
             background: white;
         }
     }
 
-    %flex-row-mobile-2 {
+    %flex-row-mobile-3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
     
-    %flex-column-mobile-2 {
+    %flex-column-mobile-3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -36,44 +36,44 @@
 
 
     // navigation bar ---------------------------------------------------------------------------
-    .nav {
-        padding: 0.6rem 1.3rem;
+    .header {
+        padding: 1.5rem 4rem;
     }
 
-    .nav__list {
-        font-size: 1rem;
+    .header__nav {
+        font-size: 1.3rem;
     }
 
-    .nav__list__first-item {
-        margin-right: 5%;
+    .header__nav__first-item {
+        margin-right: 20%;
     }
 
 
     // landing page -----------------------------------------------------------------------------
     .landing-page__heading {
-        font-size: 2.2rem;
+        font-size: 5rem;
     }
 
 
     // projects section --------------------------------------------------------------------------
     .projects {
         margin-top: 0;
-        padding: $padding-mobile-2;
+        padding: $padding-mobile-3;
     }
 
     .projects__title {
-        @extend %section-title-style-mobile-2;
+        @extend %section-title-style-mobile-3;
     }
 
     .projects__container {
-        @extend %flex-column-mobile-2;
+        @extend %flex-column-mobile-3;
         margin-top: 10%;
     }
 
     .projects__container__project {
-        @extend %flex-column-mobile-2;
-        padding: 0.9em 0.7em 1em;
-        width: 90vw;
+        @extend %flex-column-mobile-3;
+        padding: 1em 0.8em 1.2em;
+        width: 80vw;
         margin-bottom: 10%;
         &:last-child {
             margin-bottom: 20%;
@@ -83,41 +83,42 @@
     .projects__container__project__title {
         text-align: center;
         margin: 6% auto 5%;
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 
     .projects__container__project__text {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+        width: 95%;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
     }
 
     .projects__container__project__links {
-        @extend %flex-row-mobile-2;
+        @extend %flex-row-mobile-3;
         margin: 8% auto 2%;
-        width: 85%;
+        width: 60%;
         a {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
     }
 
     .projects__see-more__link {
         padding: 3% 8%;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
 
     // about section --------------------------------------------------------------------------
     .about {
-        margin: $section-margin-mobile-2;
-        padding: $padding-mobile-2;
+        margin: $section-margin-mobile-3;
+        padding: $padding-mobile-3;
     }
 
     .about__title {
-        @extend %section-title-style-mobile-2;
+        @extend %section-title-style-mobile-3;
     }
 
     .about__text {
-        @extend %flex-column-mobile-2;
+        @extend %flex-column-mobile-3;
         flex-direction: column-reverse;
         margin-top: 5%;
         padding: 0 3%;
@@ -125,65 +126,65 @@
 
     .about__text__paragraph {
         width: 100%;
-        font-size: 1rem;
-        line-height: 1.6rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
     }
 
     .about__text__img {
-        width: 80%;
+        width: 60%;
         height: auto;
         margin: 7% auto 12%;
     }
 
     .about__skills {
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .about__skills__title {
-        margin-bottom: 10%;
-        font-size: 1.2rem;
+        margin-bottom: 8%;
+        font-size: 1.5rem;
     }
 
     .about__skills__list-container {
-        @extend %flex-column-mobile-2;
-        padding: 0 7%;
+        @extend %flex-row-mobile-3;
+        padding: 0 5%;
     }
 
     .about__skills__list-container__list {
-        width: 75vw;
-        height: 19.5em;
-        font-size: 1.1rem;
-        line-height: 2.6rem;
-        &:first-child {
-            margin-bottom: 10%;
-        }
+        width: 35vw;
+        height: 19em;
+        font-size: 1.3rem;
+        line-height: 2.9rem;
     }
 
 
     // contact section --------------------------------------------------------------------------
     .contact {
-        margin: $section-margin-mobile-2;
-        padding: $padding-mobile-2;
+        margin: $section-margin-mobile-3;
+        padding: $padding-mobile-3;
     }
 
     .contact__title {
-        @extend %section-title-style-mobile-2;
+        @extend %section-title-style-mobile-3;
     }
 
     .contact__container {
-        @extend %flex-column-mobile-2;
+        @extend %flex-row-mobile-3;
         margin-top: 3rem;
-        padding: 0 0 0 8%;
-        line-height: 4rem;
-        font-size: 1.1rem;
+        padding: 0 0 0 6%;
+        line-height: 4.5rem;
+        font-size: 1.4rem;
     }
 
     .contact__container__links__1 {
-        width: 100%;
+        @extend %flex-column-mobile-3;
+        align-items: flex-start;
     }
-
+    
     .contact__container__links__2 {
-        width: 100%;
+        @extend %flex-column-mobile-3;
+        align-items: flex-start;
+        width: 35%;
     }
 
     .contact__container__links__icon {

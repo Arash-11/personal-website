@@ -6,23 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Arash | front end developer</title>
     <meta name="description" content="I build websites, striving to create the best user experience.">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/92272be603.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <div id="particles-js" class="particles-js"></div>
 
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__list__first-item"><a href="/">a.</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#contact">contact</a></li>    
-        </ul>
-    </nav>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="/" class="header__nav__first-item">a.</a>
+            <a href="#projects">projects</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>    
+        </nav>
+    </header>
 
     <section class="landing-page">
         <h1 class="landing-page__heading">Hi, I'm Arash.<br/>
@@ -38,8 +37,8 @@
                 <img src="./images/organizr.png" class="projects__container__project__img" alt="">
                 <h4 class="projects__container__project__title">Organizr</h4>
                 <p class="projects__container__project__text">
-                    A web application to organize bookmarks, blogs, articles, and videos you saved.
-                    Built with React.js, React Router, SCSS, and Firebase.
+                    A web application to store and organize your bookmarks, links, blogs, articles, and videos.
+                    Built with React, React Router, SCSS, and Firebase.
                 </p>
                 <div class="projects__container__project__links">
                     <a target="_blank" rel="noopener noreferrer" href="https://linkorganizr.netlify.app/">website</a>
@@ -48,11 +47,24 @@
             </div>
 
             <div class="projects__container__project">
+                <img src="./images/modernhn.png" class="projects__container__project__img" alt="">
+                <h4 class="projects__container__project__title">Modern Hacker News</h4>
+                <p class="projects__container__project__text">
+                    A Hacker News clone, with a minimalistic and modern UI.
+                    Built with React, React Router, Hacker News API, SCSS, webpack, and Babel.
+                </p>
+                <div class="projects__container__project__links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://modernhn.netlify.app/">website</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Arash-11/modern-hacker-news">code</a>
+                </div>
+            </div>
+
+            <div class="projects__container__project">
                 <img src="./images/booklist.png" class="projects__container__project__img" alt="">
                 <h4 class="projects__container__project__title">BookList</h4>
                 <p class="projects__container__project__text">
-                    A Google Keep-inspired website to save the books you'd like to read in one place. 
-                    Built with React.js, React Router, Material UI, and Firebase.
+                    A Google Keep-inspired website to save the list of books you'd like to read in one place. 
+                    Built with React, React Router, Material UI, and Firebase.
                 </p>
                 <div class="projects__container__project__links">
                     <a target="_blank" rel="noopener noreferrer" href="https://abooklist.netlify.app/">website</a>
@@ -61,25 +73,15 @@
             </div>
 
             <div class="projects__container__project">
-                <img src="./images/nike-mercurial.png" class="projects__container__project__img" alt="">
-                <h4 class="projects__container__project__title">Nike Mercurial Landing Page</h4>
+                <img src="./images/easybank.png" class="projects__container__project__img" alt="">
+                <h4 class="projects__container__project__title">Easybank Landing Page</h4>
                 <p class="projects__container__project__text">
-                    A landing page I designed and built for the Nike Mercurial soccer cleat, 
-                    using HTML and SCSS.
+                    A landing page coding challenge by <a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a>.
+                    Built with HTML, SCSS, and JavaScript.
                 </p>
                 <div class="projects__container__project__links">
-                    <a target="_blank" rel="noopener noreferrer" href="https://arash-11.github.io/nike-superfly-landing-page/">website</a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Arash-11/nike-superfly-landing-page">code</a>
-                </div>
-            </div>
-
-            <div class="projects__container__project">
-                <img src="./images/organizr.png" class="projects__container__project__img" alt="">
-                <h4 class="projects__container__project__title">The Website Name</h4>
-                <p class="projects__container__project__text">a description of what the website is about and what technologies are used.</p>
-                <div class="projects__container__project__links">
-                    <a target="_blank" rel="noopener noreferrer" href="https://arash-11.github.io/">website</a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Arash-11/">code</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://arash-11.github.io/easybank-landing-page/">website</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Arash-11/easybank-landing-page">code</a>
                 </div>
             </div>
 
@@ -96,20 +98,17 @@
         <article class="about__text">
             <div>
                 <p class="about__text__paragraph">
-                    I’m an aspiring front-end developer based in Ottawa, Canada, currently looking for 
-                    opportunities in the web development space.
-                    <br>
-                    I strive to merge design and functionality, while keeping the end user in mind.
+                    I am a web developer based in Ottawa (Canada), primarily focused on the front-end.
+                    I solve problems, while striving to merge the logic of design with the art of programming.
                     <br>
                     <br>
-                    When I’m not building websites, I’m reading, playing 
+                    Apart from the technologies listed below, I have also worked with 
+                    Node.js and Express, and with my interest in computer networking,
+                    I intend on further pursuing back-end technologies as well.
+                    <br>
+                    <br>
+                    When I’m not building websites, I’m reading books, playing 
                     soccer, or working on my Japanese and Spanish language skills.
-                    <br>
-                    <br>
-                    Apart from the technologies listed below, I have also dabbled with 
-                    Node.js, Express, and Particles.js.
-                    Apart from the technologies listed below, I have also dabbled with 
-                    Node.js, Express, and Particles.js.
                 </p>
             </div>
             <img src="./images/profile-img.jpg" class="about__text__img" alt="Profile picture">
@@ -155,30 +154,25 @@
                     <i class="fab fa-linkedin contact__container__links__icon"></i>
                     <span>Arash Nawyan</span>
                 </a>
-                <a class="contact__container__links__1__twitter" href="https://twitter.com/arash11gt" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-twitter contact__container__links__icon"></i>
-                    <span>@arash11gt</span>
-                </a>
             </div>
             <div class="contact__container__links__2">
                 <a class="contact__container__links__2__github" href="https://github.com/Arash-11" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github contact__container__links__icon"></i>
                     <span>Arash-11</span>
                 </a>
-                <a class="contact__container__links__2__codepen" href="https://codepen.io/arash-11" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-codepen contact__container__links__icon"></i>
-                    <span>@arash-11</span>
+                <a class="contact__container__links__2__twitter" href="https://twitter.com/arash11gt" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter contact__container__links__icon"></i>
+                    <span>@arash11gt</span>
                 </a>
             </div>
         </div>
     </section>
 
-    
+
+    <footer class="footer">© Arash Nawyan 2020</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    <script src="./app.js"></script>
-
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>

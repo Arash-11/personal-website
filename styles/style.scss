@@ -10,7 +10,8 @@ $font-family-1: 'Domine', serif;
 $font-family-2: 'Roboto', sans-serif;
 
 $padding: 0 5rem;
-$transition: background-color 0.1s ease-in;
+$background-transition: background-color 0.1s ease-in;
+$color-transition: color 0.1s ease-in;
 $section-margin: 8rem auto 4rem;
 
 %section-title-style {
@@ -61,7 +62,7 @@ body {
     a {
         text-decoration: none;
         color: white;
-        transition: color 0.1s ease-in;
+        transition: $color-transition;
     }
     li {
         list-style: none;
@@ -85,7 +86,7 @@ body {
 }
 
 // navigation bar ---------------------------------------------------------------------------
-.nav {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -95,7 +96,7 @@ body {
     z-index: 2;
 }
 
-.nav__list {
+.header__nav {
     @extend %flex-row;
     font-family: $font-family-2;
     font-size: 1.3rem;
@@ -104,7 +105,7 @@ body {
     }
 }
 
-.nav__list__first-item {
+.header__nav__first-item {
     margin-right: 50%;
     font-size: 1.5rem;
 }
@@ -187,8 +188,15 @@ body {
     font-weight: 400;
     font-size: 1.1rem;
     text-align: center;
-    line-height: 1.7rem;
+    line-height: 1.8rem;
     width: 90%;
+    height: 6rem;
+    a {
+        text-decoration: underline;
+        &:hover {
+            color: $light-red;
+        }
+    }
 }
 
 .projects__container__project__links {
@@ -205,7 +213,7 @@ body {
         color: white;
         background: $background-black;
         border-radius: 3px;
-        transition: $transition;
+        transition: $background-transition;
         &:hover {
             background: $light-red;
         }
@@ -224,7 +232,7 @@ body {
     font-size: 1.3rem;
     border-radius: 5px;
     background: $black-shade;
-    transition: $transition;
+    transition: $background-transition;
     &:hover {
         background: $light-red;
     }
@@ -331,7 +339,7 @@ body {
     }
 }
 
-.contact__container__links__1__twitter {
+.contact__container__links__2__twitter {
     &:hover {
         color: $twitter-blue;
     }
@@ -352,6 +360,15 @@ body {
 .contact__container__links__icon {
     margin-right: 1rem;
     transform: scale(1.1);
+}
+
+
+// footer ---------------------------------------------------------------------------------
+.footer {
+    margin: 6rem 0 2rem;
+    text-align: center;
+    font-family: $font-family-2;
+    font-weight: 300;
 }
 
 
