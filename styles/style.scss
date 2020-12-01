@@ -6,6 +6,7 @@ $lightgray: #f5f5f5;
 $gmail-red: #d54b3d;
 $linkedin-blue: #0077b5;
 $twitter-blue: #1c9cea;
+
 $font-family-1: 'Domine', serif;
 $font-family-2: 'Roboto', sans-serif;
 
@@ -13,6 +14,8 @@ $padding: 0 5rem;
 $background-transition: background-color 0.1s ease-in;
 $color-transition: color 0.1s ease-in;
 $section-margin: 8rem auto 4rem;
+
+$scroll-margin-top: 100px;
 
 %section-title-style {
     font-family: $font-family-2;
@@ -147,6 +150,7 @@ body {
 .projects {
     margin-top: 0;
     padding: $padding;
+    scroll-margin-top: $scroll-margin-top;
 }
 
 .projects__title {
@@ -243,6 +247,7 @@ body {
 .about {
     margin: $section-margin;
     padding: $padding;
+    scroll-margin-top: $scroll-margin-top;
 }
 
 .about__title {
