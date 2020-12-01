@@ -15,7 +15,8 @@ $background-transition: background-color 0.1s ease-in;
 $color-transition: color 0.1s ease-in;
 $section-margin: 8rem auto 4rem;
 
-$scroll-margin-top: 100px;
+// $scroll-margin-top: 100px;
+$scroll-margin-top: 0;
 
 %section-title-style {
     font-family: $font-family-2;
@@ -27,7 +28,7 @@ $scroll-margin-top: 100px;
         position: relative;
         left: 0;
         bottom: 0.4rem;
-        margin: -0.1rem 5% 0 0;
+        margin-right: 5%;
         width: 5rem;
         height: 0.1rem;
         background: white;
@@ -155,6 +156,7 @@ body {
 
 .projects__title {
     @extend %section-title-style;
+    padding-top: 90px;
 }
 
 .projects__container {
@@ -252,6 +254,7 @@ body {
 
 .about__title {
     @extend %section-title-style;
+    padding-top: 90px;
 }
 
 .about__text {
