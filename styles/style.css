@@ -167,7 +167,6 @@ body::-webkit-scrollbar-track {
 .projects {
   margin-top: 0;
   padding: 0 5rem;
-  scroll-margin-top: 0;
 }
 
 .projects__title {
@@ -271,7 +270,6 @@ body::-webkit-scrollbar-track {
 .about {
   margin: 8rem auto 4rem;
   padding: 0 5rem;
-  scroll-margin-top: 0;
 }
 
 .about__title {
