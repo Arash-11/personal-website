@@ -179,6 +179,7 @@ body {
 }
 
 .projects__container__project__title {
+    text-align: center;
     font-family: $font-family-1;
     font-weight: 500;
     font-size: 2rem;
@@ -205,6 +206,7 @@ body {
     @extend %flex-row;
     margin: 6% auto 4%;
     width: 50%;
+    max-width: 50rem;
     a {
         padding: 2% 1%;
         width: 40%;
@@ -260,6 +262,7 @@ body {
 
 .about__text__paragraph {
     width: 80%;
+    max-width: 130rem;
     font-family: $font-family-2;
     font-size: 1.3rem;
     line-height: 1.8rem;
@@ -315,6 +318,7 @@ body {
     @extend %flex-row;
     margin-top: 3rem;
     padding: 0 20% 0 5%;
+    max-width: 200rem;
     font-family: $font-family-2;
     line-height: 4.5rem;
     font-size: 1.5rem;
@@ -376,8 +380,8 @@ body {
 
 
 // media queries --------------------------------------------------------------------------
-
-@import 'large-screen-style';
+@import 'large-screen-1';
+@import 'large-screen-2';
 @import 'mobile-style-1';
 @import 'mobile-style-2';
 @import 'mobile-style-3';

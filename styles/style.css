@@ -200,6 +200,7 @@ body::-webkit-scrollbar-track {
 }
 
 .projects__container__project__title {
+  text-align: center;
   font-family: "Domine", serif;
   font-weight: 500;
   font-size: 2rem;
@@ -227,6 +228,7 @@ body::-webkit-scrollbar-track {
 .projects__container__project__links {
   margin: 6% auto 4%;
   width: 50%;
+  max-width: 50rem;
 }
 
 .projects__container__project__links a {
@@ -283,6 +285,7 @@ body::-webkit-scrollbar-track {
 
 .about__text__paragraph {
   width: 80%;
+  max-width: 130rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -330,6 +333,7 @@ body::-webkit-scrollbar-track {
 .contact__container {
   margin-top: 3rem;
   padding: 0 20% 0 5%;
+  max-width: 200rem;
   font-family: "Roboto", sans-serif;
   line-height: 4.5rem;
   font-size: 1.5rem;
@@ -380,11 +384,11 @@ body::-webkit-scrollbar-track {
   font-weight: 300;
 }
 
-@media screen and (min-width: 3000px) {
+@media screen and (min-width: 1600px) and (max-width: 2600px) {
   .projects__title, .about__title, .contact__title {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .projects__title::before, .about__title::before, .contact__title::before {
     content: '';
@@ -393,24 +397,24 @@ body::-webkit-scrollbar-track {
     left: 0;
     bottom: 0.4rem;
     margin-right: 5%;
-    width: 10rem;
+    width: 8rem;
     height: 0.2rem;
     background: white;
   }
-  body {
-    padding: 0 15rem;
-  }
   .header {
-    padding: 3rem 15rem;
+    padding: 3rem 10rem;
   }
   .header__nav {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
   .header__nav__first-item {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .landing-page__heading {
-    font-size: 10rem;
+    font-size: 6rem;
+  }
+  .projects {
+    padding: 0 10rem;
   }
   .projects__container {
     margin-top: 7%;
@@ -422,69 +426,202 @@ body::-webkit-scrollbar-track {
     border-radius: 20px;
   }
   .projects__container__project__title {
-    font-size: 4rem;
+    font-size: 2.7rem;
+    margin: 8% auto 7%;
   }
   .projects__container__project__text {
-    font-size: 2rem;
-    line-height: 3rem;
-    width: 85%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 90%;
+    height: 11rem;
+  }
+  .projects__container__project__links {
+    width: 65%;
   }
   .projects__container__project__links a {
-    padding: 3% 1%;
-    font-size: 2em;
+    padding: 3.5% 3%;
+    font-size: 1.7rem;
     border-radius: 6px;
   }
   .projects__see-more__link {
-    padding: 2% 3%;
-    font-size: 3rem;
+    padding: 2% 3.5%;
+    font-size: 1.8rem;
     border-radius: 10px;
   }
   .about {
-    margin: 23rem auto 10rem;
+    padding: 0 10rem;
+    margin: 15rem auto 8rem;
   }
   .about__text {
     margin-top: 5%;
     padding: 0 7%;
   }
   .about__text__paragraph {
-    font-size: 3rem;
-    line-height: 4.2rem;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
   }
   .about__text__img {
-    width: 70%;
+    width: 80%;
     border-radius: 20px;
   }
   .about__skills {
-    margin-top: 14rem;
+    margin-top: 12rem;
   }
   .about__skills__title {
     margin-bottom: 6%;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
   }
   .about__skills__list-container {
-    padding: 0 20%;
+    padding: 0 15%;
   }
   .about__skills__list-container__list {
-    height: 21.8em;
+    width: 25vw;
+    height: 23.5em;
     padding: 2% 0;
     margin-bottom: 7%;
     border-radius: 10px;
-    font-size: 2.7rem;
-    line-height: 7rem;
+    font-size: 1.8rem;
+    line-height: 5rem;
   }
   .contact {
-    margin: 23rem auto 10rem;
+    padding: 0 10rem;
+    margin: 15rem auto 8rem;
   }
   .contact__container {
     margin-top: 6rem;
-    padding: 0 30% 0 7%;
+    padding: 0 20% 0 7%;
     line-height: 10rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .contact__container__links__icon {
     margin-right: 2rem;
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
+  }
+  .footer {
+    margin: 10rem 0 7rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 2601px) {
+  .projects__title, .about__title, .contact__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+  .projects__title::before, .about__title::before, .contact__title::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: 0;
+    bottom: 0.4rem;
+    margin-right: 5%;
+    width: 8rem;
+    height: 0.2rem;
+    background: white;
+  }
+  .header {
+    padding: 3rem 15rem;
+  }
+  .header__nav {
+    font-size: 2rem;
+  }
+  .header__nav__first-item {
+    font-size: 2.5rem;
+  }
+  .landing-page__heading {
+    font-size: 8rem;
+  }
+  .projects {
+    padding: 0 15rem;
+  }
+  .projects__container {
+    margin-top: 7%;
+  }
+  .projects__container__project {
+    padding: 2.5em;
+    width: 40vw;
+    margin-bottom: 9%;
+    border-radius: 20px;
+  }
+  .projects__container__project__title {
+    font-size: 3.5rem;
+    margin: 8% auto 7%;
+  }
+  .projects__container__project__text {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    width: 90%;
+    max-width: 70rem;
+    height: 14rem;
+  }
+  .projects__container__project__links {
+    width: 65%;
+  }
+  .projects__container__project__links a {
+    padding: 3.5% 3%;
+    font-size: 2.5rem;
+    border-radius: 6px;
+  }
+  .projects__see-more__link {
+    padding: 2% 3.5%;
+    font-size: 3rem;
+    border-radius: 10px;
+  }
+  .about {
+    padding: 0 15rem;
+    margin: 18rem auto 10rem;
+  }
+  .about__text {
+    margin-top: 5%;
+    padding: 0 7%;
+  }
+  .about__text__paragraph {
+    font-size: 2.7rem;
+    line-height: 4.2rem;
+  }
+  .about__text__img {
+    width: 80rem;
+    border-radius: 20px;
+  }
+  .about__skills {
+    margin-top: 17rem;
+  }
+  .about__skills__title {
+    margin-bottom: 6%;
+    font-size: 3rem;
+  }
+  .about__skills__list-container {
+    padding: 0 15%;
+  }
+  .about__skills__list-container__list {
+    width: 25vw;
+    height: 22.2em;
+    padding: 2% 0;
+    margin-bottom: 7%;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    line-height: 6.5rem;
+  }
+  .contact {
+    padding: 0 15rem;
+    margin: 18rem auto 10rem;
+  }
+  .contact__container {
+    margin-top: 6rem;
+    padding: 0 30% 0 7%;
+    line-height: 10rem;
+    font-size: 2.7rem;
+  }
+  .contact__container__links__icon {
+    margin-right: 2rem;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .footer {
+    margin: 12rem 0 7rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -563,7 +700,6 @@ body::-webkit-scrollbar-track {
     margin-bottom: 20%;
   }
   .projects__container__project__title {
-    text-align: center;
     margin: 7% auto 6%;
     font-size: 1.7rem;
   }
@@ -726,7 +862,6 @@ body::-webkit-scrollbar-track {
     margin-bottom: 20%;
   }
   .projects__container__project__title {
-    text-align: center;
     margin: 7% auto 6%;
   }
   .projects__container__project__text {
@@ -884,7 +1019,6 @@ body::-webkit-scrollbar-track {
     margin-bottom: 20%;
   }
   .projects__container__project__title {
-    text-align: center;
     margin: 7% auto 6%;
     font-size: 2rem;
   }

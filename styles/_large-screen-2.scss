@@ -1,0 +1,171 @@
+@media screen and (min-width: 2601px) {
+
+    $padding-large-2: 0 15rem;
+    $section-margin-large-2: 18rem auto 10rem;
+
+    %section-title-style-large-2 {
+        font-family: $font-family-2;
+        font-weight: 400;
+        font-size: 2.5rem;
+        &::before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            left: 0;
+            bottom: 0.4rem;
+            margin-right: 5%;
+            width: 8rem;
+            height: 0.2rem;
+            background: white;
+        }
+    }
+
+
+    // navigation bar ---------------------------------------------------------------------------
+    .header {
+        padding: 3rem 15rem;
+    }
+
+    .header__nav {
+        font-size: 2rem;
+    }
+
+    .header__nav__first-item {
+        font-size: 2.5rem;
+    }
+
+
+    // landing page -----------------------------------------------------------------------------
+    .landing-page__heading {
+        font-size: 8rem;
+    }
+
+    
+    // projects section --------------------------------------------------------------------------
+    .projects {
+        padding: $padding-large-2;
+    }
+
+    .projects__title {
+        @extend %section-title-style-large-2;
+    }
+
+    .projects__container {
+        margin-top: 7%;
+    }
+
+    .projects__container__project {
+        padding: 2.5em;
+        width: 40vw;
+        margin-bottom: 9%;
+        border-radius: 20px;
+    }
+
+    .projects__container__project__title {
+        font-size: 3.5rem;
+        margin: 8% auto 7%;
+    }
+
+    .projects__container__project__text {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        width: 90%;
+        max-width: 70rem;
+        height: 14rem;
+    }
+
+    .projects__container__project__links {
+        width: 65%;
+        a {
+            padding: 3.5% 3%;
+            font-size: 2.5rem;
+            border-radius: 6px;
+        }
+    }
+
+    .projects__see-more__link {
+        padding: 2% 3.5%;
+        font-size: 3rem;
+        border-radius: 10px;
+    }
+
+
+    // about section --------------------------------------------------------------------------
+    .about {
+        padding: $padding-large-2;
+        margin: $section-margin-large-2;
+    }
+
+    .about__title {
+        @extend %section-title-style-large-2;
+    }
+
+    .about__text {
+        margin-top: 5%;
+        padding: 0 7%;
+    }
+
+    .about__text__paragraph {
+        font-size: 2.7rem;
+        line-height: 4.2rem;
+    }
+
+    .about__text__img {
+        width: 80rem;
+        border-radius: 20px;
+    }
+
+    .about__skills {
+        margin-top: 17rem;
+    }
+
+    .about__skills__title {
+        margin-bottom: 6%;
+        font-size: 3rem;
+    }
+
+    .about__skills__list-container {
+        padding: 0 15%;
+    }
+
+    .about__skills__list-container__list {
+        width: 25vw;
+        height: 22.2em;
+        padding: 2% 0;
+        margin-bottom: 7%;
+        border-radius: 10px;
+        font-size: 2.5rem;
+        line-height: 6.5rem;
+    }
+
+
+    // contact section --------------------------------------------------------------------------
+    .contact {
+        padding: $padding-large-2;
+        margin: $section-margin-large-2;
+    }
+
+    .contact__title {
+        @extend %section-title-style-large-2;
+    }
+
+    .contact__container {
+        margin-top: 6rem;
+        padding: 0 30% 0 7%;
+        line-height: 10rem;
+        font-size: 2.7rem;
+    }
+
+    .contact__container__links__icon {
+        margin-right: 2rem;
+        transform: scale(1.4);
+    }
+
+
+    // footer ---------------------------------------------------------------------------------
+    .footer {
+        margin: 12rem 0 7rem;
+        font-size: 1.8rem;
+    }
+
+}
