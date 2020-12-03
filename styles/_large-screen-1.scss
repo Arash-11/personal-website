@@ -1,12 +1,12 @@
 @media screen and (min-width: 1600px) and (max-width: 2600px) {
 
-    $padding-large-1: 0 10rem;
+    $padding-large-1: 0 12rem;
     $section-margin-large-1: 15rem auto 8rem;
 
     %section-title-style-large-1 {
         font-family: $font-family-2;
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 1.7rem;
         &::before {
             content: '';
             display: inline-block;
@@ -23,21 +23,21 @@
 
     // navigation bar ---------------------------------------------------------------------------
     .header {
-        padding: 3rem 10rem;
+        padding: 2rem 15rem 2rem 12rem;
     }
 
     .header__nav {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .header__nav__first-item {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 
     // landing page -----------------------------------------------------------------------------
     .landing-page__heading {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     
@@ -51,40 +51,39 @@
     }
 
     .projects__container {
-        margin-top: 7%;
+        margin: 7% 0 5%;
+        padding: 0 2%;
     }
 
     .projects__container__project {
-        padding: 2.5em;
-        width: 37vw;
-        margin-bottom: 9%;
+        padding: 2em;
+        width: 35vw;
+        margin-bottom: 8%;
         border-radius: 20px;
     }
 
     .projects__container__project__title {
-        font-size: 2.7rem;
-        margin: 8% auto 7%;
+        font-size: 2rem;
     }
 
     .projects__container__project__text {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        width: 90%;
-        height: 11rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        height: 7rem;
     }
 
     .projects__container__project__links {
         width: 65%;
         a {
-            padding: 3.5% 3%;
-            font-size: 1.7rem;
+            padding: 3% 1%;
+            font-size: 1.5rem;
             border-radius: 6px;
         }
     }
 
     .projects__see-more__link {
-        padding: 2% 3.5%;
-        font-size: 1.8rem;
+        padding: 1.5% 3%;
+        font-size: 1.5rem;
         border-radius: 10px;
     }
 
@@ -101,17 +100,17 @@
 
     .about__text {
         margin-top: 5%;
-        padding: 0 7%;
+        padding: 0 8%;
     }
 
     .about__text__paragraph {
-        font-size: 1.8rem;
-        line-height: 3.2rem;
+        font-size: 1.4rem;
+        line-height: 2.7rem;
     }
 
     .about__text__img {
-        width: 80%;
-        border-radius: 20px;
+        width: 45%;
+        max-width: 25rem;
     }
 
     .about__skills {
@@ -120,21 +119,21 @@
 
     .about__skills__title {
         margin-bottom: 6%;
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     .about__skills__list-container {
-        padding: 0 15%;
+        padding: 0 20%;
     }
 
     .about__skills__list-container__list {
-        width: 25vw;
-        height: 23.5em;
+        width: 20vw;
+        height: 23em;
         padding: 2% 0;
         margin-bottom: 7%;
         border-radius: 10px;
-        font-size: 1.8rem;
-        line-height: 5rem;
+        font-size: 1.5rem;
+        line-height: 4rem;
     }
 
 
@@ -150,9 +149,9 @@
 
     .contact__container {
         margin-top: 6rem;
-        padding: 0 20% 0 7%;
+        padding: 0 20% 0 10%;
         line-height: 10rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .contact__container__links__icon {
@@ -164,7 +163,7 @@
     // footer ---------------------------------------------------------------------------------
     .footer {
         margin: 10rem 0 7rem;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 
 }

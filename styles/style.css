@@ -139,6 +139,7 @@ body::-webkit-scrollbar-track {
           transform: translate(-50%, -50%);
   font-family: "Domine", serif;
   font-size: 6rem;
+  line-height: 7rem;
   z-index: 1;
   -webkit-animation: 0.5s ease-in-out 0.3s forwards fadeIn;
           animation: 0.5s ease-in-out 0.3s forwards fadeIn;
@@ -180,7 +181,7 @@ body::-webkit-scrollbar-track {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 5%;
+  margin: 5% 0 3%;
 }
 
 .projects__container__project {
@@ -214,6 +215,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
   line-height: 1.8rem;
   width: 90%;
+  max-width: 40rem;
   height: 6rem;
 }
 
@@ -227,12 +229,12 @@ body::-webkit-scrollbar-track {
 
 .projects__container__project__links {
   margin: 6% auto 4%;
-  width: 50%;
+  width: 60%;
   max-width: 50rem;
 }
 
 .projects__container__project__links a {
-  padding: 2% 1%;
+  padding: 3% 2%;
   width: 40%;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -285,7 +287,7 @@ body::-webkit-scrollbar-track {
 
 .about__text__paragraph {
   width: 80%;
-  max-width: 130rem;
+  max-width: 65rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -388,7 +390,7 @@ body::-webkit-scrollbar-track {
   .projects__title, .about__title, .contact__title {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .projects__title::before, .about__title::before, .contact__title::before {
     content: '';
@@ -402,96 +404,95 @@ body::-webkit-scrollbar-track {
     background: white;
   }
   .header {
-    padding: 3rem 10rem;
+    padding: 2rem 15rem 2rem 12rem;
   }
   .header__nav {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   .header__nav__first-item {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .landing-page__heading {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .projects {
-    padding: 0 10rem;
+    padding: 0 12rem;
   }
   .projects__container {
-    margin-top: 7%;
+    margin: 7% 0 5%;
+    padding: 0 2%;
   }
   .projects__container__project {
-    padding: 2.5em;
-    width: 37vw;
-    margin-bottom: 9%;
+    padding: 2em;
+    width: 35vw;
+    margin-bottom: 8%;
     border-radius: 20px;
   }
   .projects__container__project__title {
-    font-size: 2.7rem;
-    margin: 8% auto 7%;
+    font-size: 2rem;
   }
   .projects__container__project__text {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    width: 90%;
-    height: 11rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 7rem;
   }
   .projects__container__project__links {
     width: 65%;
   }
   .projects__container__project__links a {
-    padding: 3.5% 3%;
-    font-size: 1.7rem;
+    padding: 3% 1%;
+    font-size: 1.5rem;
     border-radius: 6px;
   }
   .projects__see-more__link {
-    padding: 2% 3.5%;
-    font-size: 1.8rem;
+    padding: 1.5% 3%;
+    font-size: 1.5rem;
     border-radius: 10px;
   }
   .about {
-    padding: 0 10rem;
+    padding: 0 12rem;
     margin: 15rem auto 8rem;
   }
   .about__text {
     margin-top: 5%;
-    padding: 0 7%;
+    padding: 0 8%;
   }
   .about__text__paragraph {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
   }
   .about__text__img {
-    width: 80%;
-    border-radius: 20px;
+    width: 45%;
+    max-width: 25rem;
   }
   .about__skills {
     margin-top: 12rem;
   }
   .about__skills__title {
     margin-bottom: 6%;
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .about__skills__list-container {
-    padding: 0 15%;
+    padding: 0 20%;
   }
   .about__skills__list-container__list {
-    width: 25vw;
-    height: 23.5em;
+    width: 20vw;
+    height: 23em;
     padding: 2% 0;
     margin-bottom: 7%;
     border-radius: 10px;
-    font-size: 1.8rem;
-    line-height: 5rem;
+    font-size: 1.5rem;
+    line-height: 4rem;
   }
   .contact {
-    padding: 0 10rem;
+    padding: 0 12rem;
     margin: 15rem auto 8rem;
   }
   .contact__container {
     margin-top: 6rem;
-    padding: 0 20% 0 7%;
+    padding: 0 20% 0 10%;
     line-height: 10rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .contact__container__links__icon {
     margin-right: 2rem;
@@ -500,7 +501,7 @@ body::-webkit-scrollbar-track {
   }
   .footer {
     margin: 10rem 0 7rem;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -508,7 +509,7 @@ body::-webkit-scrollbar-track {
   .projects__title, .about__title, .contact__title {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
   .projects__title::before, .about__title::before, .contact__title::before {
     content: '';
@@ -522,97 +523,95 @@ body::-webkit-scrollbar-track {
     background: white;
   }
   .header {
-    padding: 3rem 15rem;
+    padding: 2rem 22rem 2rem 18rem;
   }
   .header__nav {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .header__nav__first-item {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .landing-page__heading {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   .projects {
-    padding: 0 15rem;
+    padding: 0 18rem;
   }
   .projects__container {
-    margin-top: 7%;
+    margin: 7% 0 5%;
+    padding: 0 2%;
   }
   .projects__container__project {
-    padding: 2.5em;
-    width: 40vw;
-    margin-bottom: 9%;
+    padding: 2em;
+    width: 35vw;
+    margin-bottom: 8%;
     border-radius: 20px;
   }
   .projects__container__project__title {
-    font-size: 3.5rem;
-    margin: 8% auto 7%;
+    font-size: 2rem;
   }
   .projects__container__project__text {
-    font-size: 2.5rem;
-    line-height: 4rem;
-    width: 90%;
-    max-width: 70rem;
-    height: 14rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 7rem;
   }
   .projects__container__project__links {
     width: 65%;
   }
   .projects__container__project__links a {
-    padding: 3.5% 3%;
-    font-size: 2.5rem;
+    padding: 3% 1%;
+    font-size: 1.5rem;
     border-radius: 6px;
   }
   .projects__see-more__link {
-    padding: 2% 3.5%;
-    font-size: 3rem;
+    padding: 1.5% 3%;
+    font-size: 1.5rem;
     border-radius: 10px;
   }
   .about {
-    padding: 0 15rem;
-    margin: 18rem auto 10rem;
+    padding: 0 18rem;
+    margin: 15rem auto 8rem;
   }
   .about__text {
     margin-top: 5%;
-    padding: 0 7%;
+    padding: 0 10%;
   }
   .about__text__paragraph {
-    font-size: 2.7rem;
-    line-height: 4.2rem;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
   }
   .about__text__img {
-    width: 80rem;
-    border-radius: 20px;
+    width: 45%;
+    max-width: 25rem;
   }
   .about__skills {
-    margin-top: 17rem;
+    margin-top: 12rem;
   }
   .about__skills__title {
     margin-bottom: 6%;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .about__skills__list-container {
-    padding: 0 15%;
+    padding: 0 20%;
   }
   .about__skills__list-container__list {
-    width: 25vw;
-    height: 22.2em;
+    width: 20vw;
+    height: 23em;
     padding: 2% 0;
     margin-bottom: 7%;
     border-radius: 10px;
-    font-size: 2.5rem;
-    line-height: 6.5rem;
+    font-size: 1.5rem;
+    line-height: 4rem;
   }
   .contact {
-    padding: 0 15rem;
-    margin: 18rem auto 10rem;
+    padding: 0 18rem;
+    margin: 15rem auto 8rem;
   }
   .contact__container {
     margin-top: 6rem;
-    padding: 0 30% 0 7%;
+    padding: 0 20% 0 10%;
     line-height: 10rem;
-    font-size: 2.7rem;
+    font-size: 1.7rem;
   }
   .contact__container__links__icon {
     margin-right: 2rem;
@@ -620,8 +619,8 @@ body::-webkit-scrollbar-track {
             transform: scale(1.4);
   }
   .footer {
-    margin: 12rem 0 7rem;
-    font-size: 1.8rem;
+    margin: 10rem 0 7rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -683,13 +682,14 @@ body::-webkit-scrollbar-track {
   }
   .landing-page__heading {
     font-size: 2.2rem;
+    line-height: 4rem;
   }
   .projects {
     margin-top: 0;
     padding: 0 1rem;
   }
   .projects__container {
-    margin-top: 10%;
+    margin: 10% 0 7%;
   }
   .projects__container__project {
     padding: 0.9em 0.7em 1em;
@@ -845,13 +845,14 @@ body::-webkit-scrollbar-track {
   }
   .landing-page__heading {
     font-size: 2.6rem;
+    line-height: 3.5rem;
   }
   .projects {
     margin-top: 0;
     padding: 0 1.3rem;
   }
   .projects__container {
-    margin-top: 10%;
+    margin: 10% 0 7%;
   }
   .projects__container__project {
     padding: 0.9em 0.7em 1em;
@@ -1002,13 +1003,14 @@ body::-webkit-scrollbar-track {
   }
   .landing-page__heading {
     font-size: 5rem;
+    line-height: 6rem;
   }
   .projects {
     margin-top: 0;
     padding: 0 4rem;
   }
   .projects__container {
-    margin-top: 10%;
+    margin: 10% 0 7%;
   }
   .projects__container__project {
     padding: 1em 0.8em 1.2em;

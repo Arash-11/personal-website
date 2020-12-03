@@ -1,12 +1,12 @@
 @media screen and (min-width: 2601px) {
 
-    $padding-large-2: 0 15rem;
-    $section-margin-large-2: 18rem auto 10rem;
+    $padding-large-2: 0 18rem;
+    $section-margin-large-2: 15rem auto 8rem;
 
     %section-title-style-large-2 {
         font-family: $font-family-2;
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         &::before {
             content: '';
             display: inline-block;
@@ -23,21 +23,21 @@
 
     // navigation bar ---------------------------------------------------------------------------
     .header {
-        padding: 3rem 15rem;
+        padding: 2rem 22rem 2rem 18rem;
     }
 
     .header__nav {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .header__nav__first-item {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
 
     // landing page -----------------------------------------------------------------------------
     .landing-page__heading {
-        font-size: 8rem;
+        font-size: 5rem;
     }
 
     
@@ -51,41 +51,39 @@
     }
 
     .projects__container {
-        margin-top: 7%;
+        margin: 7% 0 5%;
+        padding: 0 2%;
     }
 
     .projects__container__project {
-        padding: 2.5em;
-        width: 40vw;
-        margin-bottom: 9%;
+        padding: 2em;
+        width: 35vw;
+        margin-bottom: 8%;
         border-radius: 20px;
     }
 
     .projects__container__project__title {
-        font-size: 3.5rem;
-        margin: 8% auto 7%;
+        font-size: 2rem;
     }
 
     .projects__container__project__text {
-        font-size: 2.5rem;
-        line-height: 4rem;
-        width: 90%;
-        max-width: 70rem;
-        height: 14rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        height: 7rem;
     }
 
     .projects__container__project__links {
         width: 65%;
         a {
-            padding: 3.5% 3%;
-            font-size: 2.5rem;
+            padding: 3% 1%;
+            font-size: 1.5rem;
             border-radius: 6px;
         }
     }
 
     .projects__see-more__link {
-        padding: 2% 3.5%;
-        font-size: 3rem;
+        padding: 1.5% 3%;
+        font-size: 1.5rem;
         border-radius: 10px;
     }
 
@@ -102,40 +100,40 @@
 
     .about__text {
         margin-top: 5%;
-        padding: 0 7%;
+        padding: 0 10%;
     }
 
     .about__text__paragraph {
-        font-size: 2.7rem;
-        line-height: 4.2rem;
+        font-size: 1.4rem;
+        line-height: 2.7rem;
     }
 
     .about__text__img {
-        width: 80rem;
-        border-radius: 20px;
+        width: 45%;
+        max-width: 25rem;
     }
 
     .about__skills {
-        margin-top: 17rem;
+        margin-top: 12rem;
     }
 
     .about__skills__title {
         margin-bottom: 6%;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .about__skills__list-container {
-        padding: 0 15%;
+        padding: 0 20%;
     }
 
     .about__skills__list-container__list {
-        width: 25vw;
-        height: 22.2em;
+        width: 20vw;
+        height: 23em;
         padding: 2% 0;
         margin-bottom: 7%;
         border-radius: 10px;
-        font-size: 2.5rem;
-        line-height: 6.5rem;
+        font-size: 1.5rem;
+        line-height: 4rem;
     }
 
 
@@ -151,9 +149,9 @@
 
     .contact__container {
         margin-top: 6rem;
-        padding: 0 30% 0 7%;
+        padding: 0 20% 0 10%;
         line-height: 10rem;
-        font-size: 2.7rem;
+        font-size: 1.7rem;
     }
 
     .contact__container__links__icon {
@@ -164,8 +162,8 @@
 
     // footer ---------------------------------------------------------------------------------
     .footer {
-        margin: 12rem 0 7rem;
-        font-size: 1.8rem;
+        margin: 10rem 0 7rem;
+        font-size: 1.3rem;
     }
 
 }

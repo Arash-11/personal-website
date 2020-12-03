@@ -52,6 +52,7 @@
     // landing page -----------------------------------------------------------------------------
     .landing-page__heading {
         font-size: 5rem;
+        line-height: 6rem;
     }
 
 
@@ -67,7 +68,7 @@
 
     .projects__container {
         @extend %flex-column-mobile-3;
-        margin-top: 10%;
+        margin: 10% 0 7%;
     }
 
     .projects__container__project {
