@@ -12,4 +12,4 @@ This website is built with HTML, CSS/SCSS, and [particles.js](https://github.com
 
 You can see the live site here: https://arashn.com/.
 
-![Preview image of website](https://github.com/Arash-11/personal-website/blob/master/website-preview.png)
+![Preview image of website](https://github.com/Arash-11/personal-website/blob/master/site-preview.png)
