@@ -332,6 +332,10 @@ body::-webkit-scrollbar-track {
   padding: 0 5rem;
 }
 
+.contact__title {
+  padding-top: 90px;
+}
+
 .contact__container {
   margin-top: 3rem;
   padding: 0 20% 0 5%;

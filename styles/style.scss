@@ -11,6 +11,7 @@ $font-family-1: 'Domine', serif;
 $font-family-2: 'Roboto', sans-serif;
 
 $padding: 0 5rem;
+$padding-top: 90px;
 $background-transition: background-color 0.1s ease-in;
 $color-transition: color 0.1s ease-in;
 $section-margin: 8rem auto 4rem;
@@ -153,7 +154,7 @@ body {
 
 .projects__title {
     @extend %section-title-style;
-    padding-top: 90px;
+    padding-top: $padding-top;
 }
 
 .projects__container {
@@ -253,7 +254,7 @@ body {
 
 .about__title {
     @extend %section-title-style;
-    padding-top: 90px;
+    padding-top: $padding-top;
 }
 
 .about__text {
@@ -314,6 +315,7 @@ body {
 
 .contact__title {
     @extend %section-title-style;
+    padding-top: $padding-top;
 }
 
 .contact__container {
