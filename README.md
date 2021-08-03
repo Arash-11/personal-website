@@ -10,6 +10,6 @@
 
 This website is built with HTML, CSS/SCSS, and [particles.js](https://github.com/VincentGarreau/particles.js/) (a JavaScript library) for the background.
 
-You can see the live site here: https://arashn.com/.
+You can see the live site here: https://arashn.netlify.app/.
 
 ![Preview image of website](https://github.com/Arash-11/personal-website/blob/master/site-preview.png)
